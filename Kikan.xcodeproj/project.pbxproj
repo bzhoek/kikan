@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		493BAE9E165ED27D00913D55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAE9D165ED27D00913D55 /* UIKit.framework */; };
+		493BAEA0165ED27D00913D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAE9F165ED27D00913D55 /* Foundation.framework */; };
+		493BAEA2165ED27D00913D55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAEA1165ED27D00913D55 /* CoreGraphics.framework */; };
+		493BAEA8165ED27D00913D55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEA6165ED27D00913D55 /* InfoPlist.strings */; };
+		493BAEAA165ED27D00913D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BAEA9165ED27D00913D55 /* main.m */; };
+		493BAEAE165ED27D00913D55 /* KikanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BAEAD165ED27D00913D55 /* KikanAppDelegate.m */; };
+		493BAEB0165ED27D00913D55 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEAF165ED27D00913D55 /* Default.png */; };
+		493BAEB2165ED27D00913D55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEB1165ED27D00913D55 /* Default@2x.png */; };
+		493BAEB4165ED27D00913D55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEB3165ED27D00913D55 /* Default-568h@2x.png */; };
+		493BAEB7165ED27D00913D55 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEB5165ED27D00913D55 /* MainStoryboard.storyboard */; };
+		493BAEBA165ED27D00913D55 /* KikanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BAEB9165ED27D00913D55 /* KikanViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		493BAE99165ED27D00913D55 /* Kikan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kikan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493BAE9D165ED27D00913D55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		493BAE9F165ED27D00913D55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		493BAEA1165ED27D00913D55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		493BAEA5165ED27D00913D55 /* Kikan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kikan-Info.plist"; sourceTree = "<group>"; };
+		493BAEA7165ED27D00913D55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		493BAEA9165ED27D00913D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		493BAEAB165ED27D00913D55 /* Kikan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kikan-Prefix.pch"; sourceTree = "<group>"; };
+		493BAEAC165ED27D00913D55 /* KikanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KikanAppDelegate.h; sourceTree = "<group>"; };
+		493BAEAD165ED27D00913D55 /* KikanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KikanAppDelegate.m; sourceTree = "<group>"; };
+		493BAEAF165ED27D00913D55 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		493BAEB1165ED27D00913D55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		493BAEB3165ED27D00913D55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		493BAEB6165ED27D00913D55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		493BAEB8165ED27D00913D55 /* KikanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KikanViewController.h; sourceTree = "<group>"; };
+		493BAEB9165ED27D00913D55 /* KikanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KikanViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493BAE96165ED27D00913D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493BAE9E165ED27D00913D55 /* UIKit.framework in Frameworks */,
+				493BAEA0165ED27D00913D55 /* Foundation.framework in Frameworks */,
+				493BAEA2165ED27D00913D55 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493BAE8E165ED27D00913D55 = {
+			isa = PBXGroup;
+			children = (
+				493BAEA3165ED27D00913D55 /* Kikan */,
+				493BAE9C165ED27D00913D55 /* Frameworks */,
+				493BAE9A165ED27D00913D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		493BAE9A165ED27D00913D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493BAE99165ED27D00913D55 /* Kikan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493BAE9C165ED27D00913D55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493BAE9D165ED27D00913D55 /* UIKit.framework */,
+				493BAE9F165ED27D00913D55 /* Foundation.framework */,
+				493BAEA1165ED27D00913D55 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493BAEA3165ED27D00913D55 /* Kikan */ = {
+			isa = PBXGroup;
+			children = (
+				493BAEAC165ED27D00913D55 /* KikanAppDelegate.h */,
+				493BAEAD165ED27D00913D55 /* KikanAppDelegate.m */,
+				493BAEB5165ED27D00913D55 /* MainStoryboard.storyboard */,
+				493BAEB8165ED27D00913D55 /* KikanViewController.h */,
+				493BAEB9165ED27D00913D55 /* KikanViewController.m */,
+				493BAEA4165ED27D00913D55 /* Supporting Files */,
+			);
+			path = Kikan;
+			sourceTree = "<group>";
+		};
+		493BAEA4165ED27D00913D55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				493BAEA5165ED27D00913D55 /* Kikan-Info.plist */,
+				493BAEA6165ED27D00913D55 /* InfoPlist.strings */,
+				493BAEA9165ED27D00913D55 /* main.m */,
+				493BAEAB165ED27D00913D55 /* Kikan-Prefix.pch */,
+				493BAEAF165ED27D00913D55 /* Default.png */,
+				493BAEB1165ED27D00913D55 /* Default@2x.png */,
+				493BAEB3165ED27D00913D55 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493BAE98165ED27D00913D55 /* Kikan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493BAEBD165ED27D00913D55 /* Build configuration list for PBXNativeTarget "Kikan" */;
+			buildPhases = (
+				493BAE95165ED27D00913D55 /* Sources */,
+				493BAE96165ED27D00913D55 /* Frameworks */,
+				493BAE97165ED27D00913D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kikan;
+			productName = Kikan;
+			productReference = 493BAE99165ED27D00913D55 /* Kikan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493BAE90165ED27D00913D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Kikan;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Bas van der Hoek";
+			};
+			buildConfigurationList = 493BAE93165ED27D00913D55 /* Build configuration list for PBXProject "Kikan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 493BAE8E165ED27D00913D55;
+			productRefGroup = 493BAE9A165ED27D00913D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493BAE98165ED27D00913D55 /* Kikan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493BAE97165ED27D00913D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493BAEA8165ED27D00913D55 /* InfoPlist.strings in Resources */,
+				493BAEB0165ED27D00913D55 /* Default.png in Resources */,
+				493BAEB2165ED27D00913D55 /* Default@2x.png in Resources */,
+				493BAEB4165ED27D00913D55 /* Default-568h@2x.png in Resources */,
+				493BAEB7165ED27D00913D55 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493BAE95165ED27D00913D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493BAEAA165ED27D00913D55 /* main.m in Sources */,
+				493BAEAE165ED27D00913D55 /* KikanAppDelegate.m in Sources */,
+				493BAEBA165ED27D00913D55 /* KikanViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		493BAEA6165ED27D00913D55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493BAEA7165ED27D00913D55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		493BAEB5165ED27D00913D55 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493BAEB6165ED27D00913D55 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493BAEBB165ED27D00913D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		493BAEBC165ED27D00913D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493BAEBE165ED27D00913D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kikan/Kikan-Prefix.pch";
+				INFOPLIST_FILE = "Kikan/Kikan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		493BAEBF165ED27D00913D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kikan/Kikan-Prefix.pch";
+				INFOPLIST_FILE = "Kikan/Kikan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493BAE93165ED27D00913D55 /* Build configuration list for PBXProject "Kikan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493BAEBB165ED27D00913D55 /* Debug */,
+				493BAEBC165ED27D00913D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493BAEBD165ED27D00913D55 /* Build configuration list for PBXNativeTarget "Kikan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493BAEBE165ED27D00913D55 /* Debug */,
+				493BAEBF165ED27D00913D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493BAE90165ED27D00913D55 /* Project object */;
+}
