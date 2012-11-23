@@ -46,6 +46,6 @@ static float const innerRadius = 30.0;
     CGContextAddArc(ctx, center.x, center.y, innerRadius, endAngle, startAngle, 1);
 
     CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor orangeColor] CGColor]));
-    CGContextFillPath(ctx);
+    CGContextDrawPath(ctx, kCGPathFillStroke);
 }
 @end
