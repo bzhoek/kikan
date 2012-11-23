@@ -18,6 +18,7 @@
 		493BAEB4165ED27D00913D55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEB3165ED27D00913D55 /* Default-568h@2x.png */; };
 		493BAEB7165ED27D00913D55 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493BAEB5165ED27D00913D55 /* MainStoryboard.storyboard */; };
 		493BAEBA165ED27D00913D55 /* KikanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BAEB9165ED27D00913D55 /* KikanViewController.m */; };
+		493BAEC2165ED36900913D55 /* KikanTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493BAEC1165ED36900913D55 /* KikanTimerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		493BAEB6165ED27D00913D55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		493BAEB8165ED27D00913D55 /* KikanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KikanViewController.h; sourceTree = "<group>"; };
 		493BAEB9165ED27D00913D55 /* KikanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KikanViewController.m; sourceTree = "<group>"; };
+		493BAEC0165ED36900913D55 /* KikanTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KikanTimerView.h; sourceTree = "<group>"; };
+		493BAEC1165ED36900913D55 /* KikanTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KikanTimerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				493BAEB8165ED27D00913D55 /* KikanViewController.h */,
 				493BAEB9165ED27D00913D55 /* KikanViewController.m */,
 				493BAEA4165ED27D00913D55 /* Supporting Files */,
+				493BAEC0165ED36900913D55 /* KikanTimerView.h */,
+				493BAEC1165ED36900913D55 /* KikanTimerView.m */,
 			);
 			path = Kikan;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				493BAEAA165ED27D00913D55 /* main.m in Sources */,
 				493BAEAE165ED27D00913D55 /* KikanAppDelegate.m in Sources */,
 				493BAEBA165ED27D00913D55 /* KikanViewController.m in Sources */,
+				493BAEC2165ED36900913D55 /* KikanTimerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +264,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kikan/Kikan-Prefix.pch";
 				INFOPLIST_FILE = "Kikan/Kikan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kikan/Kikan-Prefix.pch";
 				INFOPLIST_FILE = "Kikan/Kikan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
