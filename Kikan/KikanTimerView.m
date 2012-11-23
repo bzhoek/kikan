@@ -24,14 +24,17 @@
     CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor blueColor] CGColor]));
     CGContextFillRect(ctx, self.bounds);
 
-    CGContextSetStrokeColor(ctx, CGColorGetComponents([[UIColor redColor] CGColor]));
-    CGContextSetLineWidth(ctx, 1.0);
+    CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor redColor] CGColor]));
     CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
-    CGContextMoveToPoint(ctx, center.x, center.y);
-    CGPoint point = CGPointMake(center.x + (50 * cos(M_PI* 0.5)), center.y + (50 * sin(M_PI* 0.5)));
-    CGContextAddLineToPoint(ctx, point.x, point.y);
-//	CGContextAddArc(ctx, self.frame.size.width / 2, self.frame.size.height / 2, self.frame.size.height / 2, M_PI, M_PI * 2, 1);
-//	CGContextAddEllipseInRect(ctx, rect);
-    CGContextStrokePath(ctx);
+
+    float startAngle = (float) (M_PI * 0.5);
+    float endAngle = (float) (M_PI * 1.0);
+
+    CGPoint point = CGPointMake(center.x + (30 * cosf(startAngle)), center.y + (30 * sinf(startAngle)));
+    CGContextMoveToPoint(ctx, point.x, point.y);
+
+    CGContextAddArc(ctx, center.x, center.y, 50.0, startAngle, endAngle, 0);
+    CGContextAddArc(ctx, center.x, center.y, 30.0, endAngle, startAngle, 1);
+    CGContextFillPath(ctx);
 }
 @end
