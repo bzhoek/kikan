@@ -8,10 +8,6 @@
 
 #import "KikanTimerView.h"
 
-static float const outerRadius = 50.0;
-
-static float const innerRadius = 30.0;
-
 @implementation KikanTimerView
 
 - (id)initWithFrame:(CGRect)frame {
@@ -25,16 +21,19 @@ static float const innerRadius = 30.0;
 - (void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
 
-    CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor blueColor] CGColor]));
+    float outerRadius = (self.bounds.size.height / 2) - 1;
+    float innerRadius = outerRadius * 0.6f;
+
+    CGContextSetFillColorWithColor(ctx, [[UIColor whiteColor] CGColor]);
     CGContextFillRect(ctx, self.bounds);
 
     CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
     CGRect outerBounds = CGRectMake(center.x - outerRadius, center.y - outerRadius, outerRadius * 2, outerRadius * 2);
-    CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor redColor] CGColor]));
+    CGContextSetFillColorWithColor(ctx, [[UIColor redColor] CGColor]);
     CGContextFillEllipseInRect(ctx, outerBounds);
 
     CGRect innerBounds = CGRectMake(center.x - innerRadius, center.y - innerRadius, innerRadius * 2, innerRadius * 2);
-    CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor blueColor] CGColor]));
+    CGContextSetFillColorWithColor(ctx, [[UIColor whiteColor] CGColor]);
     CGContextFillEllipseInRect(ctx, innerBounds);
 
     float startAngle = (float) (M_PI * 0.5);
@@ -45,7 +44,7 @@ static float const innerRadius = 30.0;
     CGContextAddArc(ctx, center.x, center.y, outerRadius, startAngle, endAngle, 0);
     CGContextAddArc(ctx, center.x, center.y, innerRadius, endAngle, startAngle, 1);
 
-    CGContextSetFillColor(ctx, CGColorGetComponents([[UIColor orangeColor] CGColor]));
+    CGContextSetFillColorWithColor(ctx, [[UIColor orangeColor] CGColor]);
     CGContextDrawPath(ctx, kCGPathFillStroke);
 }
 @end
