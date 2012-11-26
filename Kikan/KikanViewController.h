@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KikanTimerView.h"
+#import "KikanTimerButton.h"
 
 @interface KikanViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet KikanTimerButton *button;
+@property (weak, nonatomic) IBOutlet KikanTimerView *timer;
 @end

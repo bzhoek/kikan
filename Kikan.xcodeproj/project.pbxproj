@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4938F869166407E0000856AD /* KikanTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938F868166407E0000856AD /* KikanTimerButton.m */; };
 		493BAE9E165ED27D00913D55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAE9D165ED27D00913D55 /* UIKit.framework */; };
 		493BAEA0165ED27D00913D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAE9F165ED27D00913D55 /* Foundation.framework */; };
 		493BAEA2165ED27D00913D55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493BAEA1165ED27D00913D55 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4938F867166407E0000856AD /* KikanTimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KikanTimerButton.h; sourceTree = "<group>"; };
+		4938F868166407E0000856AD /* KikanTimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KikanTimerButton.m; sourceTree = "<group>"; };
 		493BAE99165ED27D00913D55 /* Kikan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kikan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493BAE9D165ED27D00913D55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		493BAE9F165ED27D00913D55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,8 @@
 				493BAEA4165ED27D00913D55 /* Supporting Files */,
 				493BAEC0165ED36900913D55 /* KikanTimerView.h */,
 				493BAEC1165ED36900913D55 /* KikanTimerView.m */,
+				4938F867166407E0000856AD /* KikanTimerButton.h */,
+				4938F868166407E0000856AD /* KikanTimerButton.m */,
 			);
 			path = Kikan;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				493BAEAE165ED27D00913D55 /* KikanAppDelegate.m in Sources */,
 				493BAEBA165ED27D00913D55 /* KikanViewController.m in Sources */,
 				493BAEC2165ED36900913D55 /* KikanTimerView.m in Sources */,
+				4938F869166407E0000856AD /* KikanTimerButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +307,7 @@
 				493BAEBF165ED27D00913D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
