@@ -10,4 +10,7 @@
 
 @interface KikanTimerView : UIView
 
+@property (nonatomic) NSTimeInterval lap;
+@property (nonatomic) NSTimeInterval elapsed;
+
 @end

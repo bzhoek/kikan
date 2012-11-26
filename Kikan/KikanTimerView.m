@@ -10,6 +10,9 @@
 
 @implementation KikanTimerView
 
+@synthesize lap;
+@synthesize elapsed;
+
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -36,8 +39,9 @@
     CGContextSetFillColorWithColor(ctx, [[UIColor whiteColor] CGColor]);
     CGContextFillEllipseInRect(ctx, innerBounds);
 
-    float startAngle = (float) (M_PI * 0.5);
-    float endAngle = (float) (M_PI * 1.0);
+    double slice = self.elapsed / self.lap;
+    float startAngle = (float) (M_PI * 1.5);
+    float endAngle = (float) (M_PI * (1.5 + (1.99999 * slice)));
 
     CGPoint point = CGPointMake(center.x + (innerRadius * cosf(startAngle)), center.y + (innerRadius * sinf(startAngle)));
     CGContextMoveToPoint(ctx, point.x, point.y);
@@ -46,5 +50,12 @@
 
     CGContextSetFillColorWithColor(ctx, [[UIColor orangeColor] CGColor]);
     CGContextDrawPath(ctx, kCGPathFillStroke);
+
+    int minutes = (int) (self.elapsed / 60);
+    int seconds = (int) self.elapsed % 60;
+
+    NSString *now = [NSString stringWithFormat:@"%d:%d", minutes, seconds];
+    CGSize size = [now sizeWithFont:[UIFont fontWithName:@"Helvetica" size:48]];
+    [now drawAtPoint:CGPointMake(center.x - (size.width / 2), center.y - (size.height / 2)) withFont:[UIFont fontWithName:@"Helvetica" size:48]];
 }
 @end
