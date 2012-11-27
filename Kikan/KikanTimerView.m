@@ -51,10 +51,14 @@
     CGContextSetFillColorWithColor(ctx, [[UIColor orangeColor] CGColor]);
     CGContextDrawPath(ctx, kCGPathFillStroke);
 
+    [self drawTime:center];
+}
+
+- (void)drawTime:(CGPoint)center {
     int minutes = (int) (self.elapsed / 60);
     int seconds = (int) self.elapsed % 60;
 
-    NSString *now = [NSString stringWithFormat:@"%d:%d", minutes, seconds];
+    NSString *now = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
     CGSize size = [now sizeWithFont:[UIFont fontWithName:@"Helvetica" size:48]];
     [now drawAtPoint:CGPointMake(center.x - (size.width / 2), center.y - (size.height / 2)) withFont:[UIFont fontWithName:@"Helvetica" size:48]];
 }
