@@ -27,13 +27,11 @@
 }
 
 - (IBAction)timerButtonClicked:(id)sender {
-    NSLog(@"Clicked");
-    repeats = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(tock:) userInfo:nil repeats:YES];
+    repeats = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
     start = [NSDate date];
 }
 
-- (void)tock:(id)tock {
-    NSLog(@"tock");
+- (void)onTimer:(id)tock {
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:start];
     if (self.timer.lap - timeInterval < 0) {
         [repeats invalidate];
